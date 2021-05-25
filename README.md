@@ -7,7 +7,7 @@ After That It Will Show All Wifi Passwords In A PowerShell Window.
 This Is One Of The Rarest Shell Script In The World. It Can Recover All Wifi Passwords
  Connected To Your System
 
-#If You Dont Want To Download, Then Just Copy And Paste The Following Code In Notepad And Save It with .ps1 Extention.
+# If You Dont Want To Download, Then Just Copy And Paste The Following Code In Notepad And Save It with .ps1 Extention.
 
 ```shell
 $Profiles=@()
@@ -19,5 +19,5 @@ $Profiles | Foreach{$SSID = $_ ; (netsh wlan show profile name="$_" key=clear)} 
                 Format-Table -AutoSize
 Start-Sleep -s 60
 ```
-#Disclaimer
+# Disclaimer
 This Is Not A Toy. So Dont Play With It. I will not responsible for any misuse of It.
